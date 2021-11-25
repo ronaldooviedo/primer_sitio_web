@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/img/fontico.png">
+    <title>Document</title>
+    <style>
+        td{
+            background-color:steelblue;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        rowspan : sirve para que una celda ocupe mas de una fila y su valor por de defecto es 1
+    colspan : sirve para que una celda ocupe mas de una columna y su valor por de defecto es 1
+
+         -->
+    <h1>Tabla</h1>
+    <table content="1px">
+        <caption>Horario de Clases</caption>
+        <!-- CABECERA DE LA TABLA-->
+        <tr>
+            <td></td>
+            <td>L</td>
+            <td>M</td>
+            <td>X</td>
+            <td>J</td>
+            <td>V</td>
+        </tr>
+        <!-- CONTENIDO DE LA TABLA SE LE AGREGA UN TBODY-->
+        <tbody>
+        <tr>
+            <td>8:30 - 9:30</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+            <td>Sociales</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+        </tr>
+        <tr>
+            <td>9:30 - 10:25</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Matematicas</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+        </tr>
+        <tr>
+            <td>10:25 - 11:20</td>
+            <td>Educacion Fisica</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Educacion Fisica</td>
+        </tr>
+        <tr>
+            <td>11:20 - 11:45</td>
+            <td colspan="5">RECREO</td>
+
+        </tr>
+        <tr>
+           <td>11:45 - 12:40</td>
+            <td>Inlges</td>
+            <td>Sociales</td>
+            <td>Ingles</td>
+            <td>Tutoria</td>
+            <td>Ingles</td>
+        </tr>
+        <tr>
+            <td>12:40 - 13:35</td>
+            <td>Musica</td>
+            <td>Educacion Fisica</td>
+            <td>Plastica</td>
+            <td>Religion</td>
+            <td>Musica</td>
+        </tr>
+        <tr>
+            <td>13:35 - 14:30</td>
+            <td>Tegnologia</td>
+            <td>Frances</td>
+            <td>Tecnologia</td>
+            <td>Frances</td>
+            <td>Tegnologia</td>
+        </tr>
+    </tbody>
+    <!-- TFOOT ES EL PIE DE LA TABLA-->
+    <tfoot>
+        <tr>
+            <td>total de asignaturas</td>
+            <td>12</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>

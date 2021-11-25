@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:'Roboto', sans-serif;
+}
+img{
+    max-width: 20%;
+}
+.cabecera H1, .Cabecera h1{
+    float: right;
+    margin-right: 37px;
+    margin-top:35px;
+    color: #d6d6d6;
+}
+.container{
+width: 90%;
+margin: auto;
+padding:40px 0;
+display: grid;
+grid-template-rows: repeat(4, auto);
+}
+.container > div,
+.container .cabecera,
+.container .navegador,
+.container .cuerpo,
+.container .pie{
+    background-color:#2A9D8F;
+    padding: 20px 20px;
+    border-radius: 4px;
+}
+.container .caja1{
+    background-color: #2D4059;
+    
+}
+.container .caja2{
+    background-color: #FFB400;
+}
+.container .cuerpo{
+    background-color: #F4F1DE;
+    color: #1D202B;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+    height: 800px;
+}
+.container .pie{
+    background-color: #06224A;
+    color: #fff;
+    
+}
+/*NAVEGADOR*/
+.menu-li{
+    float: left;
+    margin: 5px 8px;
+}
+.menu-list{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+}
+.menu-list:hover{
+    color: #ccc;
+}
+.buscador{
+    float: left;
+    border-radius: 10px;
+    border-color: #e7e7e7;
+    width:18rem;
+    height: 35px;
+    
+}
+.buscador-li {
+    float: left;
+    margin: 0 15px;
+    color: #fff;
+    font-size: 18px;
+    
+}
+.buscador-li:hover{
+    color: #ccc;
+}
+.busst{
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 5px 2px;
+}
+.busst:hover{
+    color: #ccc;
+}
+.nav_ul{
+    text-align: right;
+    margin-top: -5px;
+}
+.nav_li{
+    display: inline-block;
+    padding: 12px 5px;
+    color: #fff;
+}
+.nav_li:hover > a{
+    color: #ccc;
+}
+.nav_li:hover > i{
+    color: #ccc;
+}
+.nav_li a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav_li i{
+    box-sizing: border-box;
+    text-align: center; /*para centrar*/
+    margin-right: 5px;
+}
+/*CUERPO*/
+/*primera seccion*/
+.caja3{
+    background-color: #ffffff;
+    grid-column: 1/2;
+    overflow-y:scroll;
+}
+.caja3 h3{
+    color: #000000;
+    line-height: 1.5em; /*el tamaño de la linia o letra*/
+    text-shadow: 2px 4px 5px #323238; /*darle sombra ala letras  eje x, eje y, tamaño del desenfoque,color */
+    font-size: x-large; /*agrandar la letra*/
+    text-align: center;
+}
+.form-ul__a {
+    color: #000;
+    display: block;
+    /* border: 1px solid #000;*/
+    font-size: x-large; /*agrandar la letra*/
+    text-decoration: none;
+    font-size: 30px;
+}
+.form-ul__a:hover{
+    background: #dadada;
+    width:100%;
+    
+}
+/*segunda seccion*/
+.caja4{
+    background-color: #ffffff;
+    grid-column: 2/4;
+    display:flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: center;
+}
+.caja4-1{
+    background-color: #ccc;
+    height: 50px;
+    width: 25%;
+    margin: 10px;
+}
+/*tercera seccion*/
+.caja5{
+    background-color: #ffffff; 
+    grid-column: 3/4;
+}
+/*PIE DE PAGINA*/
+.pie{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.pie-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 12px;
+}
+.pie-3{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}.pie_li{
+    display: inline-block;
+    padding: 12px;
+    color: #fff;
+    flex-wrap: wrap-reverse;
+}
+.pie_li a{
+    color: #fff;
+    text-decoration: none;
+}
+.pie_li a:hover{
+    color: #ccc;
+}
+.pie-1 i, p{
+    color: #ffff;
+    display: inline-block;
+}
+
+
+
+/* pagina listas*/
+
+.contenedor{
+    width: 90%;
+    /*para centrar nuestro div contendor*/
+  
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;/*darle espaciado dentro del grid*/
+    grid-template-columns: repeat(3, 1fr); /*definir las  columanas*/
+    grid-template-rows: repeat(5, auto); /*definir las filas*/
+}
+.contenedor > div,
+.contenedor .nav2,
+.contenedor .Cabecera,
+.contenedor .footer,
+.contenedor .cuerpo{
+    background-color:#2A9D8F;
+    padding: 20px 20px;
+    border-radius: 4px;
+}
+.contenedor .cuerpos{
+    background-color: #F4F1DE;
+    grid-column: span 3;
+    height:140vh;
+}
+
+.contenedor .Cabecera {
+    background-color: #264653;
+    grid-column-start: 1; /* para que inicie en la columna 1*/ 
+    grid-column-end: 4; /* para que acabe en la columna 4*/
+
+}
+.contenedor .nav2{
+    background-color: #EF6F51;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.contenedor .pie{
+    background-color: #264653;
+    grid-column: span 3;
+    text-align: centrar;
+}
+.contenedor .contenido1{
+    grid-column: 3/4;
+    grid-row: span 2;
+   
+}
+/* navegador de pagina listas*/
+.boton-amarillo {
+    background-color: #7c7c7c;
+}
+.boton {
+    color: #ffffff;
+   padding: 8px 45px;
+   border-radius: 45px;
+   float: right;
+}
+.nav2 h2{
+ float: left;
+ text-align: left;
+ margin: 8px 5px;
+}
+.seccion-1{
+    border: 4px solid #06224A;
+    margin: 2px;
+    height: 33%
+}
+.seccion-1 ul, ol{
+    margin:0 25px;
+}
+.seccion-2{
+    border: 4px solid #06224A;
+    display: flex;
+    grid-gap: 5px;
+    height: 33%;
+}
+.section-antes{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: #fff;
+    width: 50%;
+}
+
+.section-despues{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background-color: #fff;
+    width: 50%;
+}
+.section-despues ul, .seccion-3 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.section-despues ul li{
+    background-color: #2e518b;
+    width: 33.33%;
+}
+.section-despues ul a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.section-despues ul li{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.section-despues ul li:hover{
+    background:#5b78a7;
+}
+/*Despegable menu*/
+.section-despues ul ul {  /*ocultar los submenu*/
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+}
+.section-despues ul ul li {
+    float:none;
+    width:150px
+}
+.section-despues  ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+}
+.section-despues ul li:hover > ul {
+    display:block;
+}
+.seccion-3{
+    height:33.33%;
+    background-color: #fff;
+    justify-content: center;
+    text-align: center;
+}
+.lup{
+    font-size:65px;
+    background-color: #2e518b;
+    
+}
+.lup:hover{
+    color: #b4b4b4;
+}
+
+.seccion-3 ul li{
+    background-color: #2e518b;
+    width: 33.33%;
+}
+.seccion-3 ul a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.seccion-3 ul li{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.seccion-3 ul li:hover{
+    background:#5b78a7;
+}
+/*Despegable menu*/
+.seccion-3 ul ul {  /*ocultar los submenu*/
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+}
+.seccion-3 ul ul li {
+    float:none;
+    width:250px
+}
+.seccion-3 ul ul a {
+    line-height:120%;
+    padding:8px 8px;
+}
+.seccion-3 ul li:hover > ul {
+    display:block;
+}
+.cuerpos > p{
+    color: #000;
+}
+
+/*PAGINA DIV*/
+.div-container-pag {
+    margin: auto;
+    margin-top: 60px;
+    width:80%;
+    height: 50vh;
+    font-size: 40px;
+    border: 4px solid #ff0000;
+    background: #b5b5b5;
+    overflow: auto;
+}.imagen-monten {
+    margin: auto;
+    margin-top: 20px;
+    width: 320px;
+    height: 350px;
+    font-size: 40px;
+    border: 4px solid #ff0000;
+    background: #b5b5b5;
+    overflow: auto;
+  }
+  .img-11 {
+    max-width: 100%;
+  }
+  
+.caja01{
+    margin-top: 1rem;
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    border: 1px solid #000;
+    margin-left: 270px;
+  }
+.caja01 p{
+    color: #000;
+}
+.caja02{
+    margin-top: 1rem;
+    width: 50px;
+    height:50px;
+    border-radius: 85px;
+    background: #bebebe;
+    transition: background 1s, width 1.3s;
+}
+.caja02:hover{   /*esto es un seudo-elemento*/
+    background: #797979;
+    width:180px;
+    height:50px;
+    border-radius: 85px;
+}
+.caja03{
+    background: #02f823;
+    height: 50px;
+    width: 50px;
+    border-radius: 85px;
+    transition: background 1s, width 1.3s;
+}
+.caja03:hover{
+    width:180px;
+    height:50px;
+    border-radius: 85px;
+}
+.img-1{
+    height: 50px;
+    width: 50px;
+    position: static;
+    max-width: 100%;
+}
+.img-2{
+    height: 45px;
+    width: 50px;
+    position: static;
+    max-width: 100%;
+}

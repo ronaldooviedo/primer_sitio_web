@@ -1,0 +1,180 @@
+/*{
+    font-family: 'Roboto Mono', monospace;
+}*/
+a {
+  width: 40%;
+}
+h3 {
+  color: #ffffff;
+  line-height: 1.5em; /*el tamaño de la linia o letra*/
+  text-shadow: 2px 4px 5px #323238; /*darle sombra ala letras  eje x, eje y, tamaño del desenfoque,color */
+  font-size: x-large; /*agrandar la letra*/
+}
+p,
+h2 {
+  font-size: x-large; /*agrandar la letra*/
+}
+img {
+  max-width: 50%;
+}
+.site-header.inicio {
+  background-image: url(../src/img/header.jpg);
+  /* posicionar una imagen */
+  background-position: center center;
+  /* mostrar una imagen total guardando su altura y anchura */
+  background-size: cover;
+  /* para que se vea mas alto una imagen  */
+  height: 100vh;
+  /* midir un minimo dependeiendo del monitor */
+
+  min-height: 60rem;
+}
+.barra {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  position: fixed;
+}
+.form-con a {
+  text-decoration: none;
+  font-size: 1.8rem; /*=18px **/
+  margin-right: 3rem;
+  padding-left: 25px;
+  color: #ffffff;
+
+}
+.form-con a:hover {
+  color: #26ff00;
+}
+.form-ul__a {
+  color: #000;
+  width: 500px;
+  display: block;
+  /* border: 1px solid #000;*/
+  margin: 5px;
+  font-size: x-large; /*agrandar la letra*/
+  text-decoration: none;
+  font-size: 50px;
+}
+.form-ul__a:hover,
+.form-con__a:hover {
+  color: #ffffff;
+  background: #323238;
+}
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+.seccion {
+  margin-top: 2rem; /* separacion hacia arriba*/
+  margin-bottom: 2rem; /*separacion hacia abajo*/
+}
+.container {
+  background: #f4f1de;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container-1 {
+  background: #f4f1de;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 120px;
+}
+.secciones-div {
+  background-color: #2a9d8f;
+  /*width: 680px; /*ancho de la caja
+     height:400px; /*largo de la caja
+     padding: 2rem;
+     float: left;
+     border-radius: 10px; /*para dar borde a las esquinas
+     box-shadow: 2px 4px 20px 0 #000 ;
+     top:20px; /*hacia abajo
+     left: 30px; /*hacia izquierda
+     position: relative;
+     bottom:; sube la caja*/
+  flex: 0 0 calc(50%);
+  border-style: solid; /*el tipo de linea*/
+  border-color: #b5b5b5; /* el color*/
+  border-width: 1px; /*el grosor del borde*/
+  margin-bottom: 2rem; /*separacion hacia afuera*/
+  overflow: auto; /* se puede usar un scroll dentro del contenido de una caja*/
+}
+.ejemplos-guia {
+  /*background-color: #e76f51; 
+    padding: 2rem;
+    float: right;  sirve para ubicar la caja contenedora a la derecha o izquierda
+    width: 480px; /*ancho de la caja
+    height:400px; /*largo de la caja
+    position: relative;
+    right:480px; /*hacia la izquierda
+    left:480px; /*hacia ka derecha
+    bottom: 400px; /* hacia arriba
+    border-radius: 15px; /*para dar borde a las esquinas
+    box-shadow: 2px 4px 20px 0 #000 ;/*darle sombra ala caja  eje x, eje y, tamaño del desenfoque, borde, color */
+  background-color: #e76f51;
+  flex: 0 0 calc(50%);
+  border-style: solid;
+  border-color: #b5b5b5;
+  border-width: 1px;
+  margin-bottom: 2rem;
+}
+.div-container-pag {
+  margin: auto;
+  margin-top: 60px;
+  width: 320px;
+  height: 350px;
+  font-size: 40px;
+  border: 4px solid #ff0000;
+  background: #b5b5b5;
+  overflow: auto;
+}
+.imagen-monten {
+  margin: auto;
+  margin-top: 20px;
+  width: 320px;
+  height: 350px;
+  font-size: 40px;
+  border: 4px solid #ff0000;
+  background: #b5b5b5;
+  overflow: auto;
+}
+.img-1 {
+  max-width: 100%;
+}
+.form-con-2 a {
+  text-decoration: none;
+  font-size: 1.8rem; /*=18px **/
+  margin-right: 1rem;
+  margin-top: 2rem;
+  padding-left: 25px;
+  color: #000;
+  padding-top: 12px;
+}
+.form-con-2 a:hover {
+  color: #26ff00;
+}
+.barra1 {
+  display: flex;
+  justify-content: space-between;
+}
+.centrar-texto {
+  text-align: center;
+}
+.boton-amarillo {
+  background-color: #e08709;
+}
+.boton {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none; /*sin decorraciones */
+  font-size: 1.8rem;
+  padding: 1rem 3rem; /*es hacia adentro del contenido 1 hacia arriba y abajo 3 ala derecha y izquierda*/
+  margin-top: 3rem;
+  display: block;
+  text-align: center;
+}
+.d-block {
+  display: block !important;
+}
+

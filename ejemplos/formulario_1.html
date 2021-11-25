@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/img/fontico.png">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="../index.html">Volver</a>
+    <h1>Formulario de prueba N° 1</h1>
+    
+    <form action="">
+    <h3>elemento Fiel Set para encajonar dentro de un formulario</h3>
+    <!--fieldset se utiliza para encajonar o agrupar elemntos dentro de un formulario
+        legend -> se utiliza como titulo que se aloja en el formulario
+        file -> es un input para cargar archivos y enviarlos desde un formulario
+        meter -> representa el valor dentro de un rango conocido
+        progress -> para representar el proceso de una tarea
+        textarea -> se utiliza para introducir un texto en un formulario
+
+    -->
+    <fieldset>
+        <legend>legend Datos Personales</legend>
+        <label for="name" > nombre </label>
+        <input type="text" id="name">
+        <label for="surname" > apellido </label>
+        <input type="text" id="surname">
+    </fieldset>
+    <input type="file">
+    <!-- meter
+    low se establece el porcentaje esta menor a lo establecido en low
+    high estable el porcentaje supero a lo establecido en high
+-->
+    <fieldset>
+        <legend>meter</legend>
+        <label for="fuel">combustible</label>
+        <meter id="fuel" min="0" max="100" value="10" low="30" high="75" optimum="50"> 
+    </fieldset>
+    <fieldset>
+        <legend>progress</legend>
+        <label for="task"> tarea 1</label>
+        <progress id="task" max="100" value="80" ></progress>
+    </fieldset>
+    <fieldset>
+        <legend>textarea</legend>
+        <label for="messager"> mensaje: </label>
+        <textarea name="" id="messager" rows="10" cols="30"></textarea>
+
+    </fieldset>
+</form>
+</body>
+</html>

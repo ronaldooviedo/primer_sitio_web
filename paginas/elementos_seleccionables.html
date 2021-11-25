@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <script src=”http://HTML5shim.googlecode.com/svn/trunk/HTML5.js”></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="../css/estilos.css"rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="../src/img/fontico.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-1">
+        <div class="barra1">
+            <p>ELEMENTOS SELECCIOBLES</p> 
+            <nav class="form-con-2">
+               <a class="boton-amarillo boton d-block"href="../inicio.html">Volver</a>
+            </nav>
+        </div>
+    </div>
+    <form >
+        <h2>Seleccionador normal</h2>
+        <select name="lenguajes" >
+            <!--para agregar contenido dentrp de los select debe estar dentro de un option-->
+            <option value="html"> HTML</option>
+            <option value="css"> CSS</option>
+            <option value="javascript"> JAVASCRIP</option>
+            <option value="angular"> ANGULAR</option>
+        </select>
+        <h2>sSeleccionador multiple</h2>
+        <select name="lenguajes" multiple >
+            <!--para agregar contenido dentrp de los select debe estar dentro de un option-->
+            <option value="html"> HTML</option>
+            <option value="css"> CSS</option>
+            <option value="javascript"> JAVASCRIP</option>
+            <option value="angular"> ANGULAR</option>
+        </select>
+        <h2>select avanzado</h2>
+        <!-- para ordenar las opciones que se nos presenta en un lista usar la sentencia <optgroup> con 
+            atributo label para nombrar las categoiras-->
+        <h3>Mascotas</h3>
+        <select name="mascotas">
+         <optgroup label="4 patas">
+            <option value="perro"> perro </option>
+            <option value="gato"> gato </option>
+            <option value="conejo"> conejo </option>
+            <option value="hamster"> hamster </option>
+            <option value="tortuga"> tortuga </option>
+         </optgroup>
+         <optgroup label="aves">
+            <option value="loro"> loro </option>
+            <option value="canario"> canario </option>
+        </optgroup>
+        <optgroup label="otros">
+            <option value="serpiente"> serpiente </option>
+            <option value="serpiente"> tarantula </option>
+        </optgroup>
+        </select>
+        <h2>Listas seleccionables con filtro</h2>
+        <!-- usamos un input y dentro del input agregamos el  atributo 
+            list y agregamos el nombre del atributo-->
+            <input type="list" list="mascotas">
+            <!-- aplicamos el filtro que usaremos con el <datalist> -->
+            <datalist id="mascotas">
+                <option value="perro"> perro </option>
+                <option value="gato"> gato </option>
+                <option value="conejo"> conejo </option>
+                <option value="hamster"> hamster </option>
+                <option value="tortuga"> tortuga </option>
+                <option value="loro"> loro </option>
+                <option value="canario"> canario </option>
+                <option value="serpiente"> serpiente </option>
+                <option value="tarantula"> tarantula </option>
+            </datalist>    
+    
+    </form>
+</body>
+</html>
